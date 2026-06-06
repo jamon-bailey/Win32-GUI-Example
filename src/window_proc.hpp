@@ -7,4 +7,4 @@
  * @brief
  * Window procedure function.
  */
-LRESULT CALLBACK windowProcedure(HWND windowHandle, UINT message, WPARAM wParam, LPARAM lParam);
+LRESULT CALLBACK windowProcedure(HWND windowHandle, UINT signal, WPARAM wParam, LPARAM lParam);
