@@ -31,6 +31,10 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PWSTR pCmdLine
     auto windowClassId = RegisterClassEx(&windowClass);
     // ----------------------------------------------------------> Register Window Class <---
 
+    // Check that window class registration did not fail
+    if (!windowClassId)
+        return 1;
+
     // ---> Create Window From Class <-------------------------------------------------------
     HWND windowHandle = CreateWindowEx( ///< Handle to main application window
         NULL,                     ///< Optional window style
